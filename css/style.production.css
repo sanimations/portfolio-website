@@ -137,6 +137,7 @@ button:focus,
 footer{
     font-size:30px;
     line-height:2;
+    margin: 20px;
 }
 p{
     font-size:19px;
