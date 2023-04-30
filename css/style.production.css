@@ -23,7 +23,22 @@ Google Font Used = Gayahtri
             box-sizing: border-box;
 }
 :root{
+    --background-color: rgb(255,235,205);
+    --primary-buttons: #ff6070;
+    --secondary-buttons: #eb7992;
+    --border-opactiy: rgba(0,0,0,0.3);
     /*3 font colors*/
+    --dark-grey: #2b2b2b;
+    --white: #fff;
+    --red: #9a2b46;
+    --blue: rgb(0,0,255);
+    --links: #066a9f;
+    --active-links: #489c79;
+    --visited-links: #05676e;
+    --grid-background: #ededede5;
+    --sun-yellow: #edc655;
+    --sun-white: #fcffad;
+    --sun-orange: #f76414;
 }
 
 div{
@@ -35,14 +50,14 @@ div{
 h1{
     font-size: 30px;
     font-weight: 700;
-    color: #9a2b46;
+    color: var(--red);
 }
 body{
     font-family: Gayathri;
-    background-color:rgb(255,235,205);
+    background-color:var(--background-color);
 }
 a{
-    color: #066a9f;
+    color: var(--links);
 }
 /* Just here to show how this works 
 a{
@@ -50,7 +65,7 @@ a{
 } */
 a:visited{
  /*visited link*/ 
-    color: #05676e;
+    color: var(--visited-links);
 }
   
 a:hover{
@@ -60,7 +75,7 @@ a:hover{
   
 a:active{
 /*selected link*/
-    color: #489c79;
+    color: var(--active-links);
 }
 a.button{
     color: inherit;
@@ -69,8 +84,8 @@ a.link_in_button{
     color: inherit;
 }
 .button__secondary{
-    background-color: #eb7992;
-    color: #fff;
+    background-color: var(--secondary-buttons);
+    color: var(--white);
 }
 navigation-list__item--active{
     text-decoration: none;
@@ -79,7 +94,7 @@ navigation-list__item--active{
     text-decoration:none;
     color: inherit;
 }
-.button{
+.button, button{
      /*overwrites browser defaults and resets the border*/
     border: none;
     display: inline-block;
@@ -88,8 +103,8 @@ navigation-list__item--active{
     font-family:inherit;
 
     /*styles the background color, font color, and text decoration (underline, etc.) of the butt on*/
-    background-color: #ff6070;
-    color: #2b2b2b;
+    background-color: var(--primary-buttons);
+    color: var(--dark-grey);
     text-decoration: none;
 
     /*adds spacing to the button*/
@@ -97,30 +112,7 @@ navigation-list__item--active{
     border-radius: 3px;
 
      /*gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format*/
-    border-bottom: 2px solid rgba(0,0,0,0.3);
-    -webkit-transition: opacity 0.2s;
-    -o-transition: opacity 0.2s;
-    transition: opacity 0.2s;
-}
-button{
-     /*overwrites browser defaults and resets the border*/
-    border: none;
-    display: inline-block;
-
-    /*takes the font from the outer container*/
-    font-family:inherit;
-
-    /*styles the background color, font color, and text decoration (underline, etc.) of the butt on*/
-    background-color: #ff6070;
-    color: #2b2b2b;
-    text-decoration: none;
-
-    /*adds spacing to the button*/
-    padding: 10px;
-    border-radius: 3px;
-
-     /*gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format*/
-    border-bottom: 2px solid rgba(0,0,0,0.3);
+    border-bottom: 2px solid var(--border-opactiy);
     -webkit-transition: opacity 0.2s;
     -o-transition: opacity 0.2s;
     transition: opacity 0.2s;
@@ -146,10 +138,10 @@ p{
 h2{
     font-size: 20px;
     font-weight: 700;
-    color: rgb(0,0,255);
+    color: var(--blue);
 }
 table{
-    color: #2b2b2b;
+    color: var(--dark-grey);
 }
 .break--switch{
     display: none;
@@ -222,7 +214,7 @@ table{
     margin: 0;
 }
 .grid__item{
-    background-color: #ededede5;
+    background-color: var(--grid-background);
     width: auto;
     min-height: auto;
     margin: 0;
@@ -240,24 +232,24 @@ table{
 }
 @-webkit-keyframes color-change{
     0%{
-        fill: #edc655;
+        fill: var(--sun-yellow);
     }
     50%{
-        fill: #fcffad;
+        fill: var(--sun-white);
     }
     100%{
-        fill: #f76414;
+        fill: var(--sun-orange);
     }
 }
 @keyframes color-change{
     0%{
-        fill: #edc655;
+        fill: var(--sun-yellow);
     }
     50%{
-        fill: #fcffad;
+        fill: var(--sun-white);
     }
     100%{
-        fill: #f76414;
+        fill: var(--sun-orange);
     }
 }
 .sun{
