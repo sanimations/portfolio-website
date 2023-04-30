@@ -133,7 +133,9 @@ h2{
 table{
     color: var(--dark-grey);
 }
-
+.break--switch{
+    display: none;
+}
 .profile__portrait{
     float: left;
     width: 250px;
@@ -239,8 +241,12 @@ table{
 }
 
 
-
-@media all and (max-width: 500px){
+@media all and (max-width:415px){
+    .break--off{
+        display: block;
+    } 
+}
+@media all and (min-width:415px) and (max-width: 500px){
     .grid{
         grid-template-columns: 1fr;
     }
