@@ -36,7 +36,7 @@ Google Font Used = Gayahtri
 div{
     padding: 10px; /*adds a 10px inner spacing to all sides*/
     margin: 10px; /*adds a 10px outer spacing to all sides*/
-    border: 1px solid black; /*attributes describe: thickness, type, color*/
+    /*border: 1px solid black; attributes describe: thickness, type, color*/
 }
 
 h1{
@@ -119,6 +119,7 @@ button:focus,
 footer{
     font-size:30px;
     line-height:2;
+    margin: 20px;
 }
 p{
     font-size:19px;
