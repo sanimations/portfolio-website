@@ -146,6 +146,9 @@ table{
 .break--switch{
     display: none;
 }
+.work__fixed{
+    margin: 10px;
+}
 .profile__portrait{
     float: left;
     width: 250px;
