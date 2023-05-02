@@ -87,7 +87,7 @@ a.button__secondary{
     background-color: var(--secondary-buttons);
     color: var(--white);
 }
-navigation-list__item--active{
+.navigation-list__item--active{
     text-decoration: none;
 }
 .link_in_button{
