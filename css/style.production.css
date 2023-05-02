@@ -85,7 +85,7 @@ a.link_in_button{
 }
 a.button__secondary{
     background-color: var(--secondary-buttons);
-    color: var(--white);
+    color: inherit;
 }
 .navigation-list__item--active{
     text-decoration: none;
