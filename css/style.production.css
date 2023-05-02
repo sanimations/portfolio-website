@@ -186,6 +186,14 @@ table{
     width: 100%;
     padding: 20px;
 }
+.center__about{
+    margin: 0px 15%;
+    border-radius: 50%;
+}
+.center__contact{
+    max-width: 500px;
+    margin: 0 auto;
+}
 .page-header__item{
     -webkit-box-flex: 0;
         -ms-flex: 0 1 200px;
