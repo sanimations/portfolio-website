@@ -75,7 +75,7 @@ a.button{
 a.link_in_button{
     color: inherit;
 }
-.button__secondary{
+a.button__secondary{
     background-color: var(--secondary-buttons);
     color: var(--white);
 }
@@ -86,7 +86,7 @@ navigation-list__item--active{
     text-decoration:none;
     color: inherit;
 }
-.button, button{
+.button, .button__secondary, button{
      /*overwrites browser defaults and resets the border*/
     border: none;
     display: inline-block;
@@ -110,7 +110,9 @@ navigation-list__item--active{
 button:hover, 
 button:focus,
 .button:hover,
-.button:focus {
+.button:focus,
+.button__secondary:hover,
+.button__secondary:focus {
     /*lets the mouse appear as a hand when hovering over the button*/
     cursor: pointer;
     /*reduces the opacity of the button TO 30%*/
